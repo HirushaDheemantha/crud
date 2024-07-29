@@ -11,9 +11,15 @@
     <title>Crud</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
+<style>
+   .btn a {
+  text-decoration: none !important;
+}
+
+</style>
 <body>
     <div class="container">
-        <button class="btn btn-primary my-5" text-decoration="none"> <a href="user.php" class="text-light">Add user</a></button>
+        <button class="btn btn-primary my-5"> <a href="user.php" class="text-light">Add user</a></button>
         <table class="table">
   <thead>
     <tr>
@@ -45,23 +51,15 @@
       <td>'.$email.'</td>
       <td>'.$mobile.'</td>
       <td>'.$password.'</td>
+       <td>
+        <button class="btn btn-primary"><a href="update.php?updateid='.$id.'" class="text-light">Update</a></button>
+        <button class="btn btn-danger"><a href="delete.php?deleteid='.$id.'" class="text-light">Delete</a></button>
+    </td>
     </tr>';
         }
     };
 ?>
-
-    <!-- 
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr> -->
+    
   </tbody>
 </table>
     </div>

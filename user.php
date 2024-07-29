@@ -17,9 +17,15 @@
     <title>Crud</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   </head>
+  <style>
+   .btn a {
+  text-decoration: none !important;
+}
+
+</style>
   <body>
    <div class="container">
-    <button class="btn btn-secondary my-5" ><a href="display.php" class="text-light">Data Table</a></button>
+    <button class="btn btn-secondary my-5 btn-lg" ><a href="display.php" class="text-light">Data Table</a></button>
    <form method="post">
         <div class="form-group mb-3">
           <label>Name</label>
