@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   </head>
   <body>
-   <div class="container my-5">
+   <div class="container">
+    <button class="btn btn-secondary my-5" ><a href="display.php" class="text-light">Data Table</a></button>
    <form method="post">
         <div class="form-group mb-3">
           <label>Name</label>
@@ -34,7 +35,7 @@
         </div>   
         <div class="form-group mb-3">
           <label>Password</label>
-          <input type="password" name="password" class="form-control" placeholder="password">
+          <input type="password" name="password" class="form-control" placeholder="password"> 
         </div>   
   <button name="btnsubmit" type="submit" class="btn btn-primary">Submit</button>
 </form>
